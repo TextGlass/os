@@ -1,0 +1,101 @@
+{
+  "TextGlassSpecVersion": 1.0,
+  "type": "pattern",
+  "domain": "TextGlass_os",
+  "domainVersion": "1.0",
+  "description": "TextGlass os detection",
+  "publishDate": "2015-08-10T22:35:55-0400",
+  "legal": {
+    "copyright": "(c) 2015 TextGlass",
+    "license": "none"
+  },
+  "inputParser": {
+    "tokenSeperators": [ " ", "/", "(", ")", ";" ],
+    "ngramConcatSize": 1
+  },
+  "patternSet": {
+    "defaultId": "unknown",
+    "simpleHashCount": 5,
+    "patterns": [
+      {
+        "patternId": "windows",
+        "rankType": "Weak",
+        "patternType": "Simple",
+        "patternTokens": ["Windows"]
+      },
+      {
+        "patternId": "linux",
+        "rankType": "Weak",
+        "patternType": "Simple",
+        "patternTokens": ["Linux"]
+      },
+      {
+        "patternId": "android",
+        "rankType": "Weak",
+        "patternType": "Simple",
+        "patternTokens": ["Android"]
+      },
+      {
+        "patternId": "ios",
+        "rankType": "Weak",
+        "patternType": "Simple",
+        "patternTokens": ["iPhone", "iPad", "iPod"]
+      },
+      {
+        "patternId": "mac",
+        "rankType": "Weak",
+        "patternType": "Simple",
+        "patternTokens": ["Macintosh"]
+      }
+    ]
+  },
+  "attributes": {
+    "base": {
+      "parentId": "root",
+      "attributes": {
+        "error": "false"
+      }
+    },
+    "unknown": {
+      "parentId": "base",
+      "attributes": {
+        "error": "true"
+      }
+    },
+    "linux": {
+      "parentId": "base",
+      "attributes": {
+        "name": "Linux",
+        "vendor": ""
+      }
+    },
+    "android": {
+      "parentId": "base",
+      "attributes": {
+        "name": "Android",
+        "vendor": "Google"
+      }
+    },
+    "ios": {
+      "parentId": "base",
+      "attributes": {
+        "name": "iOS",
+        "vendor": "Apple"
+      }
+    },
+    "mac": {
+      "parentId": "base",
+      "attributes": {
+        "name": "OS X",
+        "vendor": "Apple"
+      }
+    },
+    "windows": {
+      "parentId": "base",
+      "attributes": {
+        "name": "Windows",
+        "vendor": "Microsoft"
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "TextGlassSpecVersion": 1.0,
+  "type": "test",
+  "domain": "TextGlass_os",
+  "domainVersion": "1.0",
+  "description": "TextGlass os detection tests",
+  "publishDate": "2015-08-10T22:35:55-0400",
+  "legal": {
+    "copyright": "(c) 2015 TextGlass",
+    "license": "none"
+  },
+  "tests": [
+    {
+      "input": "Mozilla/5.0 (Windows NT 6.0) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.874.121 Safari/535.2",
+      "resultPatternId": "windows",
+      "resultAttributes": {
+        "name": "Windows"
+      }
+    },
+    {
+      "input": "Mozilla/5.0 (Android; Mobile; rv:39.0) Gecko/39.0 Firefox/39.0",
+      "resultPatternId": "android",
+      "resultAttributes": {
+        "name": "Android"
+      }
+    },
+    {
+      "input": "Mozilla/5.0 (Linux; Android 4.4.4; SAMSUNG-SGH-I337 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.133 Mobile Safari/537.36",
+      "resultPatternId": "android",
+      "resultAttributes": {
+        "name": "Android"
+      }
+    },
+    {
+      "input": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/600.7.12 (KHTML, like Gecko) Version/7.1.7 Safari/537.85.16",
+      "resultPatternId": "mac",
+      "resultAttributes": {
+        "name": "OS X"
+      }
+    },
+    {
+      "input": "Mozilla/5.0 (iPhone; CPU iPhone OS 8_1_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12B440 Safari/600.1.4",
+      "resultPatternId": "ios",
+      "resultAttributes": {
+        "name": "iOS"
+      }
+    },
+    {
+      "input": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.1 (KHTML, like Gecko) Ubuntu/11.04 Chromium/14.0.835.202 Chrome Safari/535.1",
+      "resultPatternId": "linux",
+      "resultAttributes": {
+        "name": "Linux"
+      }
+    },
+    {
+      "input": "Mozilla/5.0 (X11; U; i686; en-US; rv:1.9.1.16) Gecko/20101206 SeaMonkey/2.0.11",
+      "resultPatternId": "unknown",
+      "resultAttributes": {
+        "error": "true"
+      }
+    }
+  ]
+}
