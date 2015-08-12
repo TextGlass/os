@@ -15,7 +15,6 @@
   },
   "patternSet": {
     "defaultId": "unknown",
-    "simpleHashCount": 5,
     "patterns": [
       {
         "patternId": "windows",
