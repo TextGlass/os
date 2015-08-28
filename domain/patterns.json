@@ -52,7 +52,6 @@
     "base": {
       "parentId": "root",
       "attributes": {
-        "error": "false"
       }
     },
     "unknown": {
