@@ -1,7 +1,7 @@
 {
   "TextGlassSpecVersion": 1.0,
   "type": "test",
-  "domain": "TextGlass_os",
+  "domain": "os",
   "domainVersion": "1.0",
   "description": "TextGlass os detection tests",
   "publishDate": "2015-08-10T22:35:55-0400",
