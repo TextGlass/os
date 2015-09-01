@@ -6,5 +6,6 @@ OS attributes
 
  * name
  * vendor
+ * version
  * error
 

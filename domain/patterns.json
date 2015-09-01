@@ -193,6 +193,13 @@
                 "delimiter": ";",
                 "get": 0
               }
+            },
+            {
+              "type": "SplitAndGet",
+              "parameters": {
+                "delimiter": " ",
+                "get": 0
+              }
             }
           ]
         }
