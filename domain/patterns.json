@@ -127,6 +127,7 @@
       {
         "patternId": "osx",
         "rankType": "Weak",
+        "rankValue": -100,
         "patternType": "SimpleOrderedAnd",
         "patternTokens": ["Mac", "OSX"]
       }
@@ -183,6 +184,33 @@
       "attributes": {
         "name": "iOS",
         "vendor": "Apple"
+      },
+      "attributeTransformers": {
+        "version" : {
+          "transformers": [
+            {
+              "type": "SplitAndGet",
+              "parameters": {
+                "delimiter": "OS ",
+                "get": 1
+              }
+            },
+            {
+              "type": "SplitAndGet",
+              "parameters": {
+                "delimiter": " ",
+                "get": 0
+              }
+            },
+            {
+              "type": "ReplaceAll",
+              "parameters": {
+                "find": "_",
+                "replaceWith": "."
+              }
+            }
+          ]
+        }
       }
     },
     "mac": {
