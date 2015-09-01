@@ -155,9 +155,26 @@
     },
     {
       "input": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/600.7.12 (KHTML, like Gecko) Version/7.1.7 Safari/537.85.16",
-      "resultPatternId": "mac",
+      "resultPatternId": "osx",
       "resultAttributes": {
-        "name": "OS X"
+        "name": "OS X",
+        "version": "10.9.5"
+      }
+    },
+    {
+      "input": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:32.0) Gecko/20100101 Firefox/32.0",
+      "resultPatternId": "osx",
+      "resultAttributes": {
+        "name": "OS X",
+        "version": "10.9"
+      }
+    },
+    {
+      "input": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36",
+      "resultPatternId": "osx",
+      "resultAttributes": {
+        "name": "OS X",
+        "version": "10.9.0"
       }
     },
     {

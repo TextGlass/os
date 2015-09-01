@@ -120,9 +120,15 @@
       },
       {
         "patternId": "mac",
-        "rankType": "Weak",
+        "rankType": "None",
         "patternType": "Simple",
         "patternTokens": ["Macintosh"]
+      },
+      {
+        "patternId": "osx",
+        "rankType": "Weak",
+        "patternType": "SimpleOrderedAnd",
+        "patternTokens": ["Mac", "OSX"]
       }
     ]
   },
@@ -182,8 +188,48 @@
     "mac": {
       "parentId": "base",
       "attributes": {
-        "name": "OS X",
+        "name": "Macintosh",
         "vendor": "Apple"
+      }
+    },
+    "osx": {
+      "parentId": "mac",
+      "attributes": {
+        "name": "OS X"
+      },
+      "attributeTransformers": {
+        "version" : {
+          "transformers": [
+            {
+              "type": "SplitAndGet",
+              "parameters": {
+                "delimiter": "OS X ",
+                "get": 1
+              }
+            },
+            {
+              "type": "SplitAndGet",
+              "parameters": {
+                "delimiter": ";",
+                "get": 0
+              }
+            },
+            {
+              "type": "SplitAndGet",
+              "parameters": {
+                "delimiter": ")",
+                "get": 0
+              }
+            },
+            {
+              "type": "ReplaceAll",
+              "parameters": {
+                "find": "_",
+                "replaceWith": "."
+              }
+            }
+          ]
+        }
       }
     },
     "windows95": {
