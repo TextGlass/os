@@ -96,10 +96,15 @@
       },
       {
         "patternId": "linux",
-        "rankType": "Weak",
-        "rankValue": -50,
+        "rankType": "None",
         "patternType": "Simple",
         "patternTokens": ["Linux"]
+      },
+      {
+        "patternId": "linux",
+        "rankType": "Weak",
+        "patternType": "Simple",
+        "patternTokens": ["Fedora", "Ubuntu"]
       },
       {
         "patternId": "android",
@@ -145,6 +150,26 @@
       "attributes": {
         "name": "Android",
         "vendor": "Google"
+      },
+      "attributeTransformers": {
+        "version" : {
+          "transformers": [
+            {
+              "type": "SplitAndGet",
+              "parameters": {
+                "delimiter": "Android ",
+                "get": 1
+              }
+            },
+            {
+              "type": "SplitAndGet",
+              "parameters": {
+                "delimiter": ";",
+                "get": 0
+              }
+            }
+          ]
+        }
       }
     },
     "ios": {
