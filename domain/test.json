@@ -18,6 +18,14 @@
       }
     },
     {
+      "input": "Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0)",
+      "resultPatternId": "windowsphone",
+      "resultAttributes": {
+        "name": "Windows",
+        "version": "Phone"
+      }
+    },
+    {
       "input": "Mozilla/5.0 (Windows NT 6.0) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.874.121 Safari/535.2",
       "resultPatternId": "windowsvista",
       "resultAttributes": {
@@ -222,6 +230,13 @@
       "resultPatternId": "linux",
       "resultAttributes": {
         "name": "Linux"
+      }
+    },
+    {
+      "input": "Opera/9.80 (X11; FreeBSD 8.1-RELEASE i386; Edition Next) Presto/2.12.388 Version/12.10",
+      "resultPatternId": "freebsd",
+      "resultAttributes": {
+        "name": "FreeBSD"
       }
     },
     {

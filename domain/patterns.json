@@ -95,6 +95,12 @@
         "patternTokens": ["Windows", "NT6.3"]
       },
       {
+        "patternId": "windowsphone",
+        "rankType": "Weak",
+        "patternType": "Simple",
+        "patternTokens": ["WindowsPhone"]
+      },
+      {
         "patternId": "linux",
         "rankType": "None",
         "patternType": "Simple",
@@ -105,6 +111,12 @@
         "rankType": "Weak",
         "patternType": "Simple",
         "patternTokens": ["Fedora", "Ubuntu"]
+      },
+      {
+        "patternId": "freebsd",
+        "rankType": "Weak",
+        "patternType": "Simple",
+        "patternTokens": ["FreeBSD"]
       },
       {
         "patternId": "android",
@@ -149,6 +161,13 @@
       "parentId": "base",
       "attributes": {
         "name": "Linux",
+        "vendor": ""
+      }
+    },
+    "freebsd": {
+      "parentId": "base",
+      "attributes": {
+        "name": "FreeBSD",
         "vendor": ""
       }
     },
@@ -330,6 +349,12 @@
       "parentId": "windows",
       "attributes": {
         "version": "10"
+      }
+    },
+    "windowsphone": {
+      "parentId": "windows",
+      "attributes": {
+        "version": "Phone"
       }
     },
     "windows": {
