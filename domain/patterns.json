@@ -11,20 +11,93 @@
   },
   "inputParser": {
     "tokenSeperators": [ " ", "/", "(", ")", ";" ],
-    "ngramConcatSize": 1
+    "ngramConcatSize": 2
   },
   "patternSet": {
     "defaultId": "unknown",
     "patterns": [
       {
         "patternId": "windows",
+        "rankType": "None",
+        "patternType": "Simple",
+        "patternTokens": ["Windows", "windows"]
+      },
+      {
+        "patternId": "windows95",
         "rankType": "Weak",
         "patternType": "Simple",
-        "patternTokens": ["Windows"]
+        "patternTokens": ["Windows95"]
+      },
+      {
+        "patternId": "windows98",
+        "rankType": "Weak",
+        "patternType": "Simple",
+        "patternTokens": ["Windows98"]
+      },
+      {
+        "patternId": "windowsce",
+        "rankType": "Weak",
+        "patternType": "Simple",
+        "patternTokens": ["WindowsCE"]
+      },
+      {
+        "patternId": "windowsnt4",
+        "rankType": "Weak",
+        "patternType": "SimpleOrderedAnd",
+        "patternTokens": ["Windows", "NT4.0"]
+      },
+      {
+        "patternId": "windows2000",
+        "rankType": "Weak",
+        "patternType": "SimpleOrderedAnd",
+        "patternTokens": ["Windows", "NT5.0"]
+      },
+      {
+        "patternId": "windowsxp",
+        "rankType": "Weak",
+        "patternType": "SimpleOrderedAnd",
+        "patternTokens": ["Windows", "NT5.1"]
+      },
+      {
+        "patternId": "windows2003",
+        "rankType": "Weak",
+        "patternType": "SimpleOrderedAnd",
+        "patternTokens": ["Windows", "NT5.2"]
+      },
+      {
+        "patternId": "windowsvista",
+        "rankType": "Weak",
+        "patternType": "SimpleOrderedAnd",
+        "patternTokens": ["Windows", "NT6.0"]
+      },
+      {
+        "patternId": "windows7",
+        "rankType": "Weak",
+        "patternType": "SimpleOrderedAnd",
+        "patternTokens": ["Windows", "NT6.1"]
+      },
+      {
+        "patternId": "windows8",
+        "rankType": "Weak",
+        "patternType": "SimpleOrderedAnd",
+        "patternTokens": ["Windows", "NT6.2"]
+      },
+      {
+        "patternId": "windows10",
+        "rankType": "Weak",
+        "patternType": "SimpleOrderedAnd",
+        "patternTokens": ["Windows", "NT10.0"]
+      },
+      {
+        "patternId": "windows81",
+        "rankType": "Weak",
+        "patternType": "SimpleOrderedAnd",
+        "patternTokens": ["Windows", "NT6.3"]
       },
       {
         "patternId": "linux",
         "rankType": "Weak",
+        "rankValue": -50,
         "patternType": "Simple",
         "patternTokens": ["Linux"]
       },
@@ -86,6 +159,78 @@
       "attributes": {
         "name": "OS X",
         "vendor": "Apple"
+      }
+    },
+    "windows95": {
+      "parentId": "windows",
+      "attributes": {
+        "version": "95"
+      }
+    },
+    "windows98": {
+      "parentId": "windows",
+      "attributes": {
+        "version": "98"
+      }
+    },
+    "windowsce": {
+      "parentId": "windows",
+      "attributes": {
+        "version": "CE"
+      }
+    },
+    "windowsnt4": {
+      "parentId": "windows",
+      "attributes": {
+        "version": "NT 4.0"
+      }
+    },
+    "windows2000": {
+      "parentId": "windows",
+      "attributes": {
+        "version": "2000"
+      }
+    },
+    "windowsxp": {
+      "parentId": "windows",
+      "attributes": {
+        "version": "XP"
+      }
+    },
+    "windows2003": {
+      "parentId": "windows",
+      "attributes": {
+        "version": "2003"
+      }
+    },
+    "windowsvista": {
+      "parentId": "windows",
+      "attributes": {
+        "version": "Vista"
+      }
+    },
+    "windows7": {
+      "parentId": "windows",
+      "attributes": {
+        "version": "7"
+      }
+    },
+    "windows8": {
+      "parentId": "windows",
+      "attributes": {
+        "version": "8"
+      }
+    },
+    "windows81": {
+      "parentId": "windows",
+      "attributes": {
+        "version": "8.1"
+      }
+    },
+    "windows10": {
+      "parentId": "windows",
+      "attributes": {
+        "version": "10"
       }
     },
     "windows": {
