@@ -361,7 +361,41 @@
     "windowsphone": {
       "parentId": "windows",
       "attributes": {
-        "version": "Phone"
+        "name": "Windows Phone"
+      },
+      "attributeTransformers": {
+        "version" : {
+          "transformers": [
+            {
+              "type": "SplitAndGet",
+              "parameters": {
+                "delimiter": "Windows Phone ",
+                "get": 1
+              }
+            },
+            {
+              "type": "SplitAndGet",
+              "parameters": {
+                "delimiter": ";",
+                "get": 0
+              }
+            },
+            {
+              "type": "SplitAndGet",
+              "parameters": {
+                "delimiter": "OS ",
+                "get": -1
+              }
+            },
+            {
+              "type": "SplitAndGet",
+              "parameters": {
+                "delimiter": " ",
+                "get": 0
+              }
+            }
+          ]
+        }
       }
     },
     "windows": {
