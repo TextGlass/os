@@ -131,7 +131,7 @@
         "patternTokens": ["iPhone", "iPad", "iPod"]
       },
       {
-        "patternId": "mac",
+        "patternId": "osx",
         "rankType": "None",
         "patternType": "Simple",
         "patternTokens": ["Macintosh"]
@@ -242,7 +242,6 @@
     "mac": {
       "parentId": "base",
       "attributes": {
-        "name": "Macintosh",
         "vendor": "Apple"
       }
     },
@@ -272,6 +271,13 @@
               "type": "SplitAndGet",
               "parameters": {
                 "delimiter": ")",
+                "get": 0
+              }
+            },
+            {
+              "type": "SplitAndGet",
+              "parameters": {
+                "delimiter": " ",
                 "get": 0
               }
             },
