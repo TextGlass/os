@@ -206,10 +206,9 @@
       }
     },
     "ios": {
-      "parentId": "base",
+      "parentId": "apple",
       "attributes": {
         "name": "iOS",
-        "vendor": "Apple"
       },
       "attributeTransformers": {
         "version" : {
@@ -239,14 +238,14 @@
         }
       }
     },
-    "mac": {
+    "apple": {
       "parentId": "base",
       "attributes": {
         "vendor": "Apple"
       }
     },
     "osx": {
-      "parentId": "mac",
+      "parentId": "apple",
       "attributes": {
         "name": "OS X"
       },
