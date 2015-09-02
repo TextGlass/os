@@ -4,7 +4,7 @@
   "domain": "os",
   "domainVersion": "1.0",
   "description": "TextGlass os detection",
-  "publishDate": "2015-08-10T22:35:55-0400",
+  "publishDate": "2015-09-02T16:46:34-0400",
   "legal": {
     "copyright": "(c) 2015 TextGlass",
     "license": "Apache License 2.0"
@@ -154,7 +154,7 @@
     "unknown": {
       "parentId": "base",
       "attributes": {
-        "error": "true"
+        "unknown": "true"
       }
     },
     "linux": {
@@ -208,7 +208,7 @@
     "ios": {
       "parentId": "apple",
       "attributes": {
-        "name": "iOS",
+        "name": "iOS"
       },
       "attributeTransformers": {
         "version" : {
@@ -312,54 +312,63 @@
     "windowsnt4": {
       "parentId": "windows",
       "attributes": {
+        "ntversion": "4.0",
         "version": "NT 4.0"
       }
     },
     "windows2000": {
       "parentId": "windows",
       "attributes": {
+        "ntversion": "5.0",
         "version": "2000"
       }
     },
     "windowsxp": {
       "parentId": "windows",
       "attributes": {
+        "ntversion": "5.1",
         "version": "XP"
       }
     },
     "windows2003": {
       "parentId": "windows",
       "attributes": {
+        "ntversion": "5.2",
         "version": "2003"
       }
     },
     "windowsvista": {
       "parentId": "windows",
       "attributes": {
+        "ntversion": "6.0",
         "version": "Vista"
       }
     },
     "windows7": {
       "parentId": "windows",
       "attributes": {
+        "ntversion": "6.1",
         "version": "7"
       }
     },
     "windows8": {
       "parentId": "windows",
       "attributes": {
+        "ntversion": "6.2",
         "version": "8"
       }
     },
     "windows81": {
       "parentId": "windows",
       "attributes": {
+        "ntversion": "6.3",
         "version": "8.1"
       }
     },
     "windows10": {
       "parentId": "windows",
       "attributes": {
+        "ntversion": "10.0",
         "version": "10"
       }
     },

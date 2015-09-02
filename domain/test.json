@@ -4,7 +4,7 @@
   "domain": "os",
   "domainVersion": "1.0",
   "description": "TextGlass os detection tests",
-  "publishDate": "2015-08-10T22:35:55-0400",
+  "publishDate": "2015-09-02T16:46:34-0400",
   "legal": {
     "copyright": "(c) 2015 TextGlass",
     "license": "Apache License 2.0"
@@ -46,6 +46,7 @@
       "resultPatternId": "windowsvista",
       "resultAttributes": {
         "name": "Windows",
+        "ntversion": "6.0",
         "version": "Vista"
       }
     },
@@ -94,6 +95,7 @@
       "resultPatternId": "windowsxp",
       "resultAttributes": {
         "name": "Windows",
+        "ntversion": "5.1",
         "version": "XP"
       }
     },
@@ -126,7 +128,8 @@
       "resultPatternId": "windows81",
       "resultAttributes": {
         "name": "Windows",
-        "version": "8.1"
+        "version": "8.1",
+        "ntversion": "6.3"
       }
     },
     {
@@ -134,6 +137,7 @@
       "resultPatternId": "windows10",
       "resultAttributes": {
         "name": "Windows",
+        "ntversion": "10.0",
         "version": "10"
       }
     },
@@ -267,7 +271,7 @@
       "input": "Mozilla/5.0 (X11; U; i686; en-US; rv:1.9.1.16) Gecko/20101206 SeaMonkey/2.0.11",
       "resultPatternId": "unknown",
       "resultAttributes": {
-        "error": "true"
+        "unknown": "true"
       }
     }
   ]

@@ -7,5 +7,6 @@ OS attributes
  * name
  * vendor
  * version
- * error
+ * ntversion
+ * unknown
 
