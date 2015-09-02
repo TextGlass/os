@@ -20,7 +20,7 @@
         "patternId": "windows",
         "rankType": "None",
         "patternType": "Simple",
-        "patternTokens": ["Windows", "windows"]
+        "patternTokens": ["Windows"]
       },
       {
         "patternId": "windows95",
