@@ -4,7 +4,7 @@
   "domain": "os",
   "domainVersion": "1.0",
   "description": "TextGlass os detection",
-  "publishDate": "2015-09-02T16:46:34-0400",
+  "publishDate": "2015-10-19T11:51:47-0400",
   "legal": {
     "copyright": "(c) 2015 TextGlass",
     "license": "Apache License 2.0"
@@ -175,7 +175,8 @@
       "parentId": "base",
       "attributes": {
         "name": "Android",
-        "vendor": "Google"
+        "vendor": "Google",
+        "mobile": "true"
       },
       "attributeTransformers": {
         "version" : {
@@ -208,7 +209,8 @@
     "ios": {
       "parentId": "apple",
       "attributes": {
-        "name": "iOS"
+        "name": "iOS",
+        "mobile": "true"
       },
       "attributeTransformers": {
         "version" : {

@@ -4,7 +4,7 @@
   "domain": "os",
   "domainVersion": "1.0",
   "description": "TextGlass os detection tests",
-  "publishDate": "2015-09-02T16:46:34-0400",
+  "publishDate": "2015-10-19T11:51:47-0400",
   "legal": {
     "copyright": "(c) 2015 TextGlass",
     "license": "Apache License 2.0"
@@ -162,7 +162,8 @@
       "resultPatternId": "android",
       "resultAttributes": {
         "name": "Android",
-        "version": "5.0.1"
+        "version": "5.0.1",
+        "mobile": "true"
       }
     },
     {
@@ -226,7 +227,8 @@
       "resultPatternId": "ios",
       "resultAttributes": {
         "name": "iOS",
-        "version": "7.1.2"
+        "version": "7.1.2",
+        "mobile": "true"
       }
     },
     {

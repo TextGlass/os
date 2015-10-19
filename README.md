@@ -8,5 +8,6 @@ OS attributes
  * vendor
  * version
  * ntversion
+ * mobile
  * unknown
 
